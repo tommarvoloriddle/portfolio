@@ -85,8 +85,8 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg">
             I am a math enthusiast 🧠 and software engineer 💻 passionate about solving complex problems. 
             In AI research, I specialize in Deep Learning, Computer Vision, Natural Language Processing, and LLMs 🤖, utilizing tools like PyTorch, TensorFlow, ONNX, and JIT 🔍, 
-            with a focus on LLM-based recommendation systems. I've also served as a Teaching Assistant for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Prof. Yann LeCun
+            with a focus on LLM-based recommendation systems. I have also served as a Teaching Assistant for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Prof Yann LeCun
             </span> 👨‍🏫. On the software development side, I have extensive experience with Python, Flask, ExpressJS, and Node.js 🛠️ for backend development, and React, Next.js, Redux, TypeScript, HTML, and CSS 🌐 for frontend development. Additionally, I have hands-on experience with C/C++ and Assembly for embedded systems 🔧, and Java and XML for Android development 📱. I am a quick learner, always eager to expand my skills 📚, and a team player excited to collaborate and create innovative applications 🚀.
           </p>
           <div className="flex flex-row justify-start mt-8">
