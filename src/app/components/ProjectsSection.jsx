@@ -5,56 +5,85 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 
 const projectsData = [
-  {
-    id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
-    image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
-    image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Chattr - Chat Room",
+    description: "Real-time chat application with rooms and private messaging",
+    image: "/images/projects/Chattr.png",
     tag: ["All", "Web"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "https://drive.google.com/file/d/1LpJTlG7fUGtA-16gdvkbGA3I0sMFGzsm/view?usp=sharing",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
+    title: "SLIP: Segmentation Using Text Prompts",
+    description: "Paper: Combining text and image prompts for image segmentation",
+    image: "/images/projects/SLIP.png",
+    tag: ["All", "AI"],
+    gitUrl: "/",
+    previewUrl: "https://github.com/tommarvoloriddle/SLIP",
+  },
+  {
+    id: 2,
+    title: "Taxi Data Analytics for New York City",
+    description: "🚖 Enhancing Taxi Services for New York City using Big Data 📊",
+    image: "/images/projects/Taxi.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/arushi297/Enhancing-Taxi-Services-Through-Big-Data-Analytics-Predictive-Modeling/tree/main",
+    previewUrl: "https://drive.google.com/file/d/1RgqfifhoaMTZegTxa05FoXP6XksU_5KI/view",
+  },
+  {
+    id: 3,
+    title: "Reverse Image Search Engine",
+    description: "Fast and accurate reverse image search engine",
+    image: "/images/projects/ImageSimilarity.png",
+    tag: ["All", "Web"],
+    gitUrl: "https://github.com/tommarvoloriddle/blinkfire-image-similarity",
+    previewUrl: "https://github.com/tommarvoloriddle/blinkfire-image-similarity",
+  },
+  {
+    id: 1,
+    title: "Vision KAN",
+    description: "Python Package: 1500+ downloads 📥 and 150+ ⭐ on GitHub!",
+    image: "/images/projects/KAN.png",
+    tag: ["All", "AI"],
+    gitUrl: "https://github.com/chenziwenhaoshuai/Vision-KAN",
+    previewUrl: "https://github.com/chenziwenhaoshuai/Vision-KAN",
+  },
+  {
+    id: 5,
+    title: "Distributed Key-Value Store",
+    description: "Distributed key-value store with eventual consistency and fault tolerance",
+    image: "/images/projects/5.png",
+    tag: ["All", "Web"],
+    gitUrl: "/",
+    previewUrl: "https://github.com/tommarvoloriddle/Distributed-Key-Value-Store",
+  },
+  {
+    id: 7,
+    title: "LLM Unlearning",
+    description: "Paper: Mitiagting biases and harmful responses in LLMs using unlearning techniques",
+    image: "/images/projects/LLMul.png",
+    tag: ["All", "AI"],
+    gitUrl: "/",
+    previewUrl: "https://github.com/shreya1313/llm-unlearning",
+  },
+
+  {
+    id: 8,
+    title: "Autocat: LLM as Recommendation System",
+    description: "Paper: Using LLMs as recommendation systems for consumer products",
+    image: "/images/projects/LLMrec.png",
+    tag: ["All", "AI"],
+    gitUrl: "/",
+    previewUrl: "https://drive.google.com/file/d/1deF8Slc--7G8ivKrnNPAz26tVum6Aa8t/view",
+  },
+  {
+    id: 9,
+    title: "Technozion: Android App",
+    description: "Android App for Technozion, NITW's annual technical fest",
+    image: "/images/projects/technozion.png",
     tag: ["All", "Web"],
     gitUrl: "/",
     previewUrl: "/",
@@ -97,8 +126,8 @@ const ProjectsSection = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Mobile"
-          isSelected={tag === "Mobile"}
+          name="AI"
+          isSelected={tag === "AI"}
         />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
