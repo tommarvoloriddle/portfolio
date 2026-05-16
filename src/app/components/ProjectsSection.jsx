@@ -45,7 +45,7 @@ const projectsData = [
   {
     id: 1,
     title: "Vision KAN",
-    description: "Python Package: 1500+ downloads 📥 and 150+ ⭐ on GitHub!",
+    description: "Python Package: 1,000+ downloads 📥 and 250+ ⭐ on GitHub! 86.14% ImageNet, 96.16% CIFAR-100.",
     image: "/images/projects/KAN.png",
     tag: ["All", "AI"],
     gitUrl: "https://github.com/chenziwenhaoshuai/Vision-KAN",

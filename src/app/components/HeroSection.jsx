@@ -25,11 +25,11 @@ const HeroSection = () => {
               sequence={[
                 "Saaketh",
                 1000,
+                "Quant Research Analyst",
+                1000,
                 "AI Researcher",
                 1000,
                 "Software Engineer",
-                1000,
-                "Problem Solver",
                 1000,
               ]}
               wrapper="span"
@@ -38,10 +38,14 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-lg">
-          🎓  <Link target="_blank" rel="noopener noreferrer" href={'https://www.nyu.edu/'} className="text-primary-500">NYU</Link> Grad | 📊 1 Year AI Research @  
-          <Link target="_blank" rel="noopener noreferrer" href={'https://chinmayhegde.github.io/lab/'} className="text-primary-500"> Data Intelligence Lab</Link> | 
-          💻 3 Years SDE @  <Link target="_blank" rel="noopener noreferrer" href={'https://www.sap.com/index.html'} className="text-primary-500">SAP</Link> | 
-          TA @ <Link target="_blank" rel="noopener noreferrer" href={'https://ai.meta.com/people/396469589677838/yann-lecun/'} className="text-primary-500">Yann LeCun</Link>
+          📈 Quant Analyst &amp; Developer @{" "}
+          <Link target="_blank" rel="noopener noreferrer" href={'https://scovillerisk.com/'} className="text-primary-500">Scoville Risk Partners</Link> |
+          🎓 <Link target="_blank" rel="noopener noreferrer" href={'https://www.nyu.edu/'} className="text-primary-500">NYU</Link> CS Grad (GPA 3.97) |
+          🤖 AI Research @{" "}
+          <Link target="_blank" rel="noopener noreferrer" href={'https://chinmayhegde.github.io/lab/'} className="text-primary-500">DICE Lab</Link> &amp; TA @{" "}
+          <Link target="_blank" rel="noopener noreferrer" href={'https://ai.meta.com/people/396469589677838/yann-lecun/'} className="text-primary-500">Yann LeCun</Link> |
+          💻 3 Yrs SDE @{" "}
+          <Link target="_blank" rel="noopener noreferrer" href={'https://www.sap.com/index.html'} className="text-primary-500">SAP</Link>
           </p>
           <div>
             {/* <Link

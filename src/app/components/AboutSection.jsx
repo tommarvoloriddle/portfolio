@@ -5,27 +5,18 @@ import TabButton from "./TabButton";
 
 const TAB_DATA = [
   {
-    title: "Frontend Development",
-    id: "frontend",
+    title: "Quant",
+    id: "quant",
     content: (
       <ul className="list-disc pl-2">
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Next.js</li>
-        <li>TypeScript</li>
-      </ul>
-    ),
-  },
-  {
-    title: "backend",
-    id: "backend",
-    content: (
-      <ul className="list-disc pl-2">
-        <li>Python</li>
-        <li>Flask</li>
-        <li>ExpressJS</li>
-        <li>Node.JS</li>
-        <li>Java</li>
+        <li>BESS Co-Optimization (ERCOT, CAISO)</li>
+        <li>Stochastic Calculus & Monte Carlo Simulation</li>
+        <li>Portfolio Optimization & Delta Hedging</li>
+        <li>Power Derivatives & Risk Management</li>
+        <li>OTC/Bespoke Trade & Hedge Valuation</li>
+        <li>NG Transport Intrinsic/Extrinsic Decomposition</li>
+        <li>Linear Programming / QP / MILP</li>
+        <li>Retail Energy Valuation (1M+ meters)</li>
       </ul>
     ),
   },
@@ -34,11 +25,12 @@ const TAB_DATA = [
     id: "AI",
     content: (
       <ul className="list-disc pl-2">
-        <li>Pytorch</li>
-        <li>Tensorflow</li>
-        <li>LLMs</li>
+        <li>PyTorch, TensorFlow</li>
+        <li>LLMs, PEFT, LoRA, DPO</li>
         <li>Computer Vision & NLP</li>
-        <li>Deep Learning</li>
+        <li>Diffusion Models</li>
+        <li>Machine Unlearning</li>
+        <li>Zero-Shot Segmentation (SAM + CLIP)</li>
       </ul>
     ),
   },
@@ -47,27 +39,27 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>New York University - Merit Scholarship $18000</li>
-        <li>National Insitute of Technology, Warangal - Merit Scholarship INR 80K</li>
+        <li>NYU – MS Computer Engineering, GPA 3.97/4.0 | Dean&apos;s Scholarship $18,000</li>
+        <li>NIT Warangal – B.Tech, CGPA 8.38/10</li>
       </ul>
     ),
   },
   {
-    title: "Cloud",
-    id: "cloud",
+    title: "Programming",
+    id: "programming",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS S3, ECR, Lambda, Dynamo</li>
-        <li>Docker, Kubernetes</li>
-        <li>Redis</li>
-        <li>Azure CosmosDB</li>
+        <li>Python (primary), MATLAB, C++</li>
+        <li>TypeScript, React (Next.js), SQL</li>
+        <li>AWS (EC2, S3, Lambda, Amplify, Elastic Beanstalk)</li>
+        <li>MongoDB, MySQL</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  const [tab, setTab] = useState("AI");
+  const [tab, setTab] = useState("quant");
   const [isPending, startTransition] = useTransition();
 
   const handleTabChange = (id) => {
@@ -83,13 +75,29 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am a math enthusiast 🧠 and software engineer 💻 passionate about solving complex problems. 
-            In AI research, I specialize in Deep Learning, Computer Vision, Natural Language Processing, and LLMs 🤖, utilizing tools like PyTorch, TensorFlow, ONNX, and JIT 🔍, 
-            with a focus on LLM-based recommendation systems. I have also served as a Teaching Assistant for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Prof Yann LeCun
-            </span> 👨‍🏫. On the software development side, I have extensive experience with Python, Flask, ExpressJS, and Node.js 🛠️ for backend development, and React, Next.js, Redux, TypeScript, HTML, and CSS 🌐 for frontend development. Additionally, I have hands-on experience with C/C++ and Assembly for embedded systems 🔧, and Java and XML for Android development 📱. I am a quick learner, always eager to expand my skills 📚, and a team player excited to collaborate and create innovative applications 🚀.
+            I&apos;m a Quantitative Research Analyst & Developer at{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Scoville Risk Partners
+            </span>
+            , where I build and productionize valuation engines for 2GW+ of BESS assets across ERCOT and CAISO, and manage risk for retail energy portfolios spanning 1M+ meters. My work spans stochastic modeling, convex optimization, power derivatives, and systematic trading strategy.
+            <br /><br />
+            Before that, I was an AI researcher at NYU&apos;s DICE Lab — publishing work on{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Machine Unlearning in LLMs
+            </span>{" "}
+            and Zero-Shot Segmentation (SAM + CLIP), and serving as a Teaching Assistant for{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+              Prof. Yann LeCun
+            </span>. I hold an MS in Computer Engineering from NYU (GPA 3.97) and spent 3 years as a full-stack SDE at SAP Labs building production supply chain systems.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row flex-wrap justify-start mt-8 gap-y-2">
+            <TabButton
+              selectTab={() => handleTabChange("quant")}
+              active={tab === "quant"}
+            >
+              {" "}
+              Quant{" "}
+            </TabButton>
             <TabButton
               selectTab={() => handleTabChange("AI")}
               active={tab === "AI"}
@@ -98,25 +106,11 @@ const AboutSection = () => {
               AI{" "}
             </TabButton>
             <TabButton
-              selectTab={() => handleTabChange("backend")}
-              active={tab === "backend"}
+              selectTab={() => handleTabChange("programming")}
+              active={tab === "programming"}
             >
               {" "}
-              Backend{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("frontend")}
-              active={tab === "frontend"}
-            >
-              {" "}
-              Frontend{" "}
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("cloud")}
-              active={tab === "cloud"}
-            >
-              {" "}
-              Infrastructure{" "}
+              Programming{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
