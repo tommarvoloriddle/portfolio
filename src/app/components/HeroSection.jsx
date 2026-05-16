@@ -16,7 +16,7 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl lg:leading-tight font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
               Hello, I&apos;m{" "}
             </span>
@@ -27,9 +27,9 @@ const HeroSection = () => {
                 1000,
                 "Quant Research Analyst",
                 1000,
-                "AI Researcher",
+                "Quant Developer",
                 1000,
-                "Software Engineer",
+                "Energy Markets Quant",
                 1000,
               ]}
               wrapper="span"
@@ -38,14 +38,10 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-lg">
-          📈 Quant Analyst &amp; Developer @{" "}
-          <Link target="_blank" rel="noopener noreferrer" href={'https://scovillerisk.com/'} className="text-primary-500">Scoville Risk Partners</Link> |
-          🎓 <Link target="_blank" rel="noopener noreferrer" href={'https://www.nyu.edu/'} className="text-primary-500">NYU</Link> CS Grad (GPA 3.97) |
-          🤖 AI Research @{" "}
-          <Link target="_blank" rel="noopener noreferrer" href={'https://chinmayhegde.github.io/lab/'} className="text-primary-500">DICE Lab</Link> &amp; TA @{" "}
-          <Link target="_blank" rel="noopener noreferrer" href={'https://ai.meta.com/people/396469589677838/yann-lecun/'} className="text-primary-500">Yann LeCun</Link> |
-          💻 3 Yrs SDE @{" "}
-          <Link target="_blank" rel="noopener noreferrer" href={'https://www.sap.com/index.html'} className="text-primary-500">SAP</Link>
+          📈 Quant Research Analyst &amp; Developer @{" "}
+          <Link target="_blank" rel="noopener noreferrer" href={'https://scovillerisk.com/'} className="text-primary-500">Scoville Risk Partners</Link>{" "}
+          — Power, Natural Gas &amp; BESS Markets (ERCOT, CAISO, PJM) |{" "}
+          🎓 <Link target="_blank" rel="noopener noreferrer" href={'https://www.nyu.edu/'} className="text-primary-500">NYU</Link> MS Computer Engineering, GPA 3.97
           </p>
           <div>
             {/* <Link
@@ -85,7 +81,7 @@ const HeroSection = () => {
             </Link>
             <Link
               target="_blank" rel="noopener noreferrer"
-              href="/docs/saakethk_gundavarapuSoftware.pdf"
+              href="/docs/SaakethG_resume.pdf"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-800 text-white"
             >
               <span className="flex item-center bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">

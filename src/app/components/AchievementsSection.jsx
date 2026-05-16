@@ -22,12 +22,12 @@ const achievementsList = [
   },
   {
     metric: "Citations",
-    value: "18",
+    value: "30",
     postfix: "+",
   },
   {
     metric: "Years Exp",
-    value: "7",
+    value: "5",
     postfix: "+",
   },
 ];

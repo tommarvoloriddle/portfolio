@@ -1,7 +1,7 @@
 "use client";
 import React, { useTransition, useState } from "react";
-import Image from "next/image";
 import TabButton from "./TabButton";
+import QuantChart from "./QuantChart";
 
 const TAB_DATA = [
   {
@@ -71,24 +71,21 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <QuantChart />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I&apos;m a Quantitative Research Analyst & Developer at{" "}
+            I&apos;m a{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Scoville Risk Partners
-            </span>
-            , where I build and productionize valuation engines for 2GW+ of BESS assets across ERCOT and CAISO, and manage risk for retail energy portfolios spanning 1M+ meters. My work spans stochastic modeling, convex optimization, power derivatives, and systematic trading strategy.
-            <br /><br />
-            Before that, I was an AI researcher at NYU&apos;s DICE Lab — publishing work on{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Machine Unlearning in LLMs
+              Quantitative Research Analyst &amp; Developer
             </span>{" "}
-            and Zero-Shot Segmentation (SAM + CLIP), and serving as a Teaching Assistant for{" "}
+            at Scoville Risk Partners, focused on North American Power, Natural Gas, and BESS markets. I build and productionize co-optimized dispatch engines, hedge optimization platforms, and real-time valuation systems — covering 2GW+ of BESS assets across ERCOT and CAISO, and risk-managing retail energy portfolios with 1M+ meters.
+            <br /><br />
+            My quantitative toolkit spans{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-              Prof. Yann LeCun
-            </span>. I hold an MS in Computer Engineering from NYU (GPA 3.97) and spent 3 years as a full-stack SDE at SAP Labs building production supply chain systems.
+              stochastic calculus, Monte Carlo simulation, convex optimization (LP/QP/MILP)
+            </span>
+            , power derivatives pricing, delta hedging, and dynamic programming. I hold an MS in Computer Engineering from NYU (GPA 3.97, Dean&apos;s Scholarship) and bring a strong engineering foundation from 3 years as a full-stack SDE at SAP Labs.
           </p>
           <div className="flex flex-row flex-wrap justify-start mt-8 gap-y-2">
             <TabButton
